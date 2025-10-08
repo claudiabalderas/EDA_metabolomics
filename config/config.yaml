@@ -1,0 +1,19 @@
+data:
+  path: "study_data.xlsx"
+  sheets:
+    metadata: "sample_metadata"
+    matrix: "data_matrix"
+    dictionary: "data_dictionary"
+
+preprocessing:
+  scale_method: "auto"  # auto, pareto, vast, level
+  knn_k: 3
+  log_offset: 0.5  # multiplier for min positive value to handle zeros
+
+pca:
+  pcx: 1
+  pcy: 2
+
+stats:
+  parametric: true
+  pvalue_threshold: 0.05
